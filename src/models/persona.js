@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
         tableName: 'personas'
     });
     Persona.associate = function(models) {
-        Persona.hasOne(models.Grado, { foreingKey: 'nid_grado', sourceKey: 'nid_grado' })
+        // Persona.hasOne(models.Grado, { foreingKey: 'nid_grado', sourceKey: 'nid_grado' })
     };
     return Persona;
 };
